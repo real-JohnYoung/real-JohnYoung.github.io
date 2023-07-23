@@ -1,0 +1,105 @@
+/* 设置全局样式 */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7; /* 页面背景色 */
+}
+
+/* 设置页眉样式 */
+header {
+    background-color: #333; /* 页眉背景色 */
+    color: #fff; /* 页眉文字颜色 */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff; /* 链接文字颜色 */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* 设置各个部分样式 */
+section {
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff; /* 部分背景色 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 部分阴影效果 */
+}
+
+/* 设置个人照片样式 */
+#photo img {
+    display: block;
+    max-width: 360px;
+    max-height: 240px;
+}
+
+/* 设置标题样式 */
+h2 {
+    border-bottom: 2px solid #333; /* 分隔线颜色 */
+    padding-bottom: 5px;
+}
+
+/* 设置链接样式 */
+a {
+    color: #007bff; /* 链接文字颜色 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 左右布局 */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#about, #photo {
+    flex: 1;
+    padding: 10px;
+}
+
+/* 媒体查询 */
+@media screen and (max-width: 600px) {
+    /* 在屏幕宽度小于或等于600px时应用的样式 */
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .main-section {
+        flex-direction: column;
+    }
+
+    #about, #photo {
+        flex: none;
+        width: 100%;
+    }
+}
