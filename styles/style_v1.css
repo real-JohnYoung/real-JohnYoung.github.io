@@ -352,10 +352,18 @@ h2::after {
 
 /* 访客统计样式 */
 #visitor-stats {
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 30px;
-    background: #ffffff;
+    text-align: left;
+    padding: 50px;
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#visitor-stats:hover {
+    transform: translateY(-5px);
 }
 
 .visitor-counter {
