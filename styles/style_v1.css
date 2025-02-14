@@ -9,43 +9,47 @@ body {
 
 /* 设置页眉样式 */
 header {
-    background-color: #333; /* 页眉背景色 */
-    color: #fff; /* 页眉文字颜色 */
-    text-align: center;
-    padding: 20px 0;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    padding: 30px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.2em;
+    letter-spacing: 1px;
 }
 
 nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 nav a {
-    color: #fff; /* 链接文字颜色 */
-    margin: 0 10px;
-    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: rgba(255,255,255,0.2);
+    text-decoration: none;
 }
 
 /* 设置各个部分样式 */
 section {
-    padding: 40px;
-    margin: 20px auto;
+    padding: 50px;
+    margin: 30px auto;
     max-width: 800px;
     background-color: #fff; /* 部分背景色 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 部分阴影效果 */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
 }
 
 /* 设置个人照片样式 */
@@ -53,22 +57,33 @@ section {
     display: block;
     max-width: 360px;
     max-height: 240px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+#photo img:hover {
+    transform: scale(1.02);
 }
 
 /* 设置标题样式 */
 h2 {
-    border-bottom: 2px solid #333; /* 分隔线颜色 */
-    padding-bottom: 5px;
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 /* 设置链接样式 */
 a {
-    color: #007bff; /* 链接文字颜色 */
+    color: #3498db;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #2980b9;
+    text-decoration: none;
 }
 
 /* 左右布局 */
@@ -104,8 +119,27 @@ a:hover {
     }
 }
 
-
 /* 中文部分的字体 */
 .chn-font1 {
     font-family: "KaiTi";
+}
+
+/* 更新列表样式 */
+ul, ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+/* 添加新的动画效果 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+    animation: fadeIn 0.8s ease-out;
 }
