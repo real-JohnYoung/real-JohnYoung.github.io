@@ -24,6 +24,7 @@ header {
 
 header h1 {
     margin: 0;
+    color: #ffffff;
     font-size: 2.5em;
     letter-spacing: 2px;
     font-weight: 600;
@@ -42,6 +43,8 @@ nav {
 nav a {
     color: #000000;  /* 导航链接也改为黑色 */
     padding: 8px 16px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
     border-radius: 4px;
     transition: all 0.3s ease;
     position: relative;
@@ -55,7 +58,7 @@ nav a::before {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #000000;  /* 下划线也改为黑色 */
+    background-color: #ffffff;  /* 下划线也改为黑色 */
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -202,30 +205,11 @@ section {
     overflow: hidden;
 }
 
-#academic-background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4px;
-    height: 100%;
-    background: #3498db;
-    border-radius: 2px;
-}
-
 #academic-background li {
     position: relative;
     padding-left: 25px;
-    list-style: none;
 }
 
-#academic-background li::before {
-    content: '•';
-    color: #3498db;
-    position: absolute;
-    left: 0;
-    font-size: 1.5em;
-}
 
 /* 优化研究兴趣部分 */
 #Research-Interests li {
@@ -353,42 +337,5 @@ h2::after {
 /* 访客统计样式 */
 #visitor-stats {
     text-align: left;
-    padding: 50px;
-    margin: 30px auto;
-    max-width: 800px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
 }
 
-#visitor-stats:hover {
-    transform: translateY(-5px);
-}
-
-.visitor-counter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.visitor-counter img {
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    max-width: 100%;
-    height: auto;
-}
-
-.visitor-counter img:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-/* 响应式适配 */
-@media screen and (max-width: 768px) {
-    .visitor-counter img {
-        width: 100%;
-    }
-}
