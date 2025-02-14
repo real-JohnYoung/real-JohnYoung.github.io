@@ -143,3 +143,134 @@ li {
 section {
     animation: fadeIn 0.8s ease-out;
 }
+
+/* 添加卡片式设计 */
+.main-section, section {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 30px;
+    max-width: 1000px;
+}
+
+/* 优化学术背景部分 */
+#academic-background {
+    position: relative;
+    overflow: hidden;
+}
+
+#academic-background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: #3498db;
+    border-radius: 2px;
+}
+
+#academic-background li {
+    position: relative;
+    padding-left: 25px;
+    list-style: none;
+}
+
+#academic-background li::before {
+    content: '•';
+    color: #3498db;
+    position: absolute;
+    left: 0;
+    font-size: 1.5em;
+}
+
+/* 优化研究兴趣部分 */
+#Research-Interests li {
+    background: #f8f9fa;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+#Research-Interests li:hover {
+    background: #e9ecef;
+    transform: translateX(10px);
+}
+
+/* 优化联系方式部分 */
+#contact {
+    background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
+}
+
+#contact p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* 响应式布局优化 */
+@media screen and (max-width: 768px) {
+    .main-section {
+        flex-direction: column;
+    }
+
+    #photo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+}
+
+/* 添加滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3498db;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2980b9;
+}
+
+/* 添加文字选中效果 */
+::selection {
+    background: #3498db;
+    color: white;
+}
+
+/* 优化标题动画 */
+h2 {
+    position: relative;
+    overflow: hidden;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #3498db;
+    transform: translateX(-100%);
+    animation: slideIn 0.8s forwards;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+    }
+}
