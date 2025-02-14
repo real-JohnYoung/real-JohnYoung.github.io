@@ -19,7 +19,7 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     text-align: center;
-    color: #fff;
+    color: #000000;  /* 改为黑色 */
 }
 
 header h1 {
@@ -27,7 +27,7 @@ header h1 {
     font-size: 2.5em;
     letter-spacing: 2px;
     font-weight: 600;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.3);  /* 调整文字阴影使其在深色背景上更清晰 */
     animation: fadeInDown 0.8s ease-out;
 }
 
@@ -40,7 +40,7 @@ nav {
 }
 
 nav a {
-    color: #fff;
+    color: #000000;  /* 导航链接也改为黑色 */
     padding: 8px 16px;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -55,7 +55,7 @@ nav a::before {
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #fff;
+    background-color: #000000;  /* 下划线也改为黑色 */
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
