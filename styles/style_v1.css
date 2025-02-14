@@ -333,3 +333,54 @@ h2::after {
         transform: translateX(0);
     }
 }
+
+/* 优化 Patents 部分样式 */
+#Patents {
+    font-size: 0.9em;
+}
+
+#Patents h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#Patents li {
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+/* 访客统计样式 */
+#visitor-stats {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+    background: #ffffff;
+}
+
+.visitor-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.visitor-counter img {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    max-width: 100%;
+    height: auto;
+}
+
+.visitor-counter img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* 响应式适配 */
+@media screen and (max-width: 768px) {
+    .visitor-counter img {
+        width: 100%;
+    }
+}
