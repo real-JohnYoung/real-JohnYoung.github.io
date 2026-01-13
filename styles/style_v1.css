@@ -1,341 +1,115 @@
-/* 设置全局样式 */
+/* ===== 全局 ===== */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.6;
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7; /* 页面背景色 */
+    background: #ffffff;
+    color: #222;
+    line-height: 1.7;
 }
 
-/* 设置页眉样式 */
+/* ===== Header ===== */
 header {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
-    padding: 30px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #ddd;
+    padding: 40px 0 20px;
+    background: #fff;
 }
 
 .header-content {
-    max-width: 1200px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0 20px;
     text-align: center;
-    color: #000000;  /* 改为黑色 */
 }
 
 header h1 {
     margin: 0;
-    color: #ffffff;
-    font-size: 2.5em;
-    letter-spacing: 2px;
-    font-weight: 600;
-    text-shadow: 1px 1px 2px rgba(255,255,255,0.3);  /* 调整文字阴影使其在深色背景上更清晰 */
-    animation: fadeInDown 0.8s ease-out;
+    font-size: 2.2em;
+    font-weight: normal;
+    color: #111;
 }
 
+/* ===== Navigation ===== */
 nav {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
+    margin-top: 15px;
 }
 
 nav a {
-    color: #000000;  /* 导航链接也改为黑色 */
-    padding: 8px 16px;
-    font-family: 'Arial', sans-serif;
-    font-size: 1.5em;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-nav a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;  /* 下划线也改为黑色 */
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-nav a:hover::before {
-    transform: scaleX(1);
+    margin: 0 10px;
+    font-size: 1em;
+    color: #004080;
+    text-decoration: none;
 }
 
 nav a:hover {
-    background-color: rgba(255,255,255,0.1);
+    text-decoration: underline;
 }
 
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* 设置各个部分样式 */
+/* ===== Section ===== */
 section {
-    padding: 50px;
-    margin: 30px auto;
-    max-width: 800px;
-    background-color: #fff; /* 部分背景色 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 部分阴影效果 */
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
-section:hover {
-    transform: translateY(-5px);
-}
-
-/* 设置个人照片样式 */
-#photo img {
-    display: block;
-    max-width: 360px;
-    max-height: 240px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-#photo img:hover {
-    transform: scale(1.02);
-}
-
-/* 设置标题样式 */
+/* ===== Titles ===== */
 h2 {
-    color: #2c3e50;
-    border-bottom: 2px solid #3498db;
-    padding-bottom: 10px;
-    margin-bottom: 25px;
+    font-size: 1.4em;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: #111;
 }
 
-/* 设置链接样式 */
-a {
-    color: #3498db;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #2980b9;
-    text-decoration: none;
-}
-
-/* 左右布局 */
+/* ===== Main layout ===== */
 .main-section {
     display: flex;
-    flex-wrap: wrap;
+    gap: 30px;
 }
 
-#about, #photo {
+#about {
+    flex: 2;
+}
+
+#photo {
     flex: 1;
-    padding: 10px;
 }
 
-/* 媒体查询 */
-@media screen and (max-width: 600px) {
-    /* 在屏幕宽度小于或等于600px时应用的样式 */
-    .header-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav {
-        margin-top: 10px;
-    }
-
-    .main-section {
-        flex-direction: column;
-    }
-
-    #about, #photo {
-        flex: none;
-        width: 100%;
-    }
+#photo img {
+    max-width: 100%;
+    border-radius: 4px;
 }
 
-/* 中文部分的字体 */
-.chn-font1 {
-    font-family: "KaiTi";
-}
-
-/* 更新列表样式 */
-ul, ol {
+/* ===== Lists ===== */
+ul {
     padding-left: 20px;
 }
 
 li {
-    margin-bottom: 12px;
-    line-height: 1.8;
+    margin-bottom: 8px;
 }
 
-/* 添加新的动画效果 */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+/* ===== Links ===== */
+a {
+    color: #004080;
 }
 
-section {
-    animation: fadeIn 0.8s ease-out;
+a:hover {
+    color: #002b5c;
 }
 
-/* 添加卡片式设计 */
-.main-section, section {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 30px auto;
-    padding: 30px;
-    max-width: 1000px;
-}
-
-/* 优化学术背景部分 */
-#academic-background {
-    position: relative;
-    overflow: hidden;
-}
-
-#academic-background li {
-    position: relative;
-    padding-left: 25px;
-}
-
-
-/* 优化研究兴趣部分 */
-#Research-Interests li {
-    background: #f8f9fa;
-    padding: 10px 15px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-    transition: all 0.3s ease;
-}
-
-#Research-Interests li:hover {
-    background: #e9ecef;
-    transform: translateX(10px);
-}
-
-/* 优化联系方式部分 */
-#contact {
-    background: linear-gradient(to right bottom, #ffffff, #f8f9fa);
-}
-
+/* ===== Contact ===== */
 #contact p {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    margin: 6px 0;
 }
 
-/* 响应式布局优化 */
-@media screen and (max-width: 768px) {
+/* ===== Mobile ===== */
+@media (max-width: 768px) {
     .main-section {
         flex-direction: column;
     }
 
-    #photo img {
-        max-width: 100%;
-        height: auto;
-    }
-
-    nav a {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    .header-content {
-        padding: 0 15px;
-    }
-
     header h1 {
-        font-size: 2em;
-    }
-
-    nav {
-        margin-top: 15px;
-    }
-
-    nav a {
-        padding: 6px 12px;
-        font-size: 0.9em;
+        font-size: 1.8em;
     }
 }
-
-/* 添加滚动条样式 */
-::-webkit-scrollbar {
-    width: 8px;
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #3498db;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #2980b9;
-}
-
-/* 添加文字选中效果 */
-::selection {
-    background: #3498db;
-    color: white;
-}
-
-/* 优化标题动画 */
-h2 {
-    position: relative;
-    overflow: hidden;
-}
-
-h2::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #3498db;
-    transform: translateX(-100%);
-    animation: slideIn 0.8s forwards;
-}
-
-@keyframes slideIn {
-    to {
-        transform: translateX(0);
-    }
-}
-
-/* 优化 Patents 部分样式 */
-#Patents {
-    font-size: 0.9em;
-}
-
-#Patents h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-}
-
-#Patents li {
-    line-height: 1.6;
-    margin-bottom: 10px;
-    color: #444;
-}
-
-/* 访客统计样式 */
-#visitor-stats {
-    text-align: left;
-}
-

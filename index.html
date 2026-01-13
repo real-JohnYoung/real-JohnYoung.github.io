@@ -3,70 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Young | Academic Homepage</title>
+
     <link rel="stylesheet" href="styles/style_v1.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Li+Su&display=swap">
-    <title>Personal Academic Page</title>
 </head>
+
 <body>
-    <header>
-        <div class="header-content">
-            <h1>John Young's Homepage</h1>
-            <nav>
-                <a href="#about">About Me</a>
-                <a href="subpages/news.html">News</a>
-                <a href="#" onclick="showEncryptedContent('index'); return false;">CV</a>
-                <a href="subpages/links.html">Links</a>
-                <a href="subpages/publications.html">Publications</a>
-            </nav>
-        </div>
-    </header>
 
-    <section class="main-section">
-        <div id="photo">
-            <img src="images/profile.jpg" alt="images">
-        </div>
-        <div id="about">
-            <p >Chinese name: Chang Yang</p>
-            <p>English name: John Young</p>
-            <p>Hobbies: Football && Food.</p>
-            <p>Slogan: Do some meaningful research for humanity.</p>
-        </div>
-    </section>
+<header>
+    <div class="header-content">
+        <h1>John Young</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#academic">Academic</a>
+            <a href="#research">Research</a>
+            <a href="subpages/publications.html">Publications</a>
+            <a href="subpages/news.html">News</a>
+            <a href="#" onclick="showEncryptedContent('index'); return false;">CV</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
 
-    <section id="academic-background">
-        <h2>Academic Background</h2>
-        <p>
-        <li>9.2019——6.2023. Bachelor, Computer Science and Technology, Nanjing University of Aeronautics and Astronautics.
-        Supervisors: Professor <a href="https://csyuzhou.github.io/">Yu Zhou</a>
-        <li>8.2023——Today. Begin Ph.D. candidate career at Fudan University. Supervisors: Professor  Weikang Gong, Jianfeng Feng</li>
-        </p> 
-    </section>
+<main>
 
-    <section id="Research Interests">
-        <h2>Research Interests</h2>
-        <p>
-         <li>Neuroimaging</li>
-         <li>Deep Learning</li>
-         <li>Intelligent Software Engineering (Code generation, Undergraduate work)</li>    
-        </p>
+<section class="main-section">
+    <div id="photo">
+        <img src="images/profile.jpg" alt="Profile photo of John Young">
+    </div>
 
-    </section>
+    <div id="about">
+        <p><strong>Chinese name:</strong> Chang Yang (常洋)</p>
+        <p><strong>Ph.D. Candidate</strong>, Fudan University</p>
+        <p><strong>Research motto:</strong> Do meaningful research for humanity.</p>
+        <p><strong>Interests:</strong> Football, food, and scientific exploration.</p>
+    </div>
+</section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:yangchang23@m.fudan.edu.cn">yangchang23@m.fudan.edu.cn</a></p>
-        <p>Address: Fudan University, Yangpu District, Shanghai, China.</p>
-        <script src="encryption.js"></script>
-    </section>
+<section id="academic">
+    <h2>Academic Background</h2>
+    <ul>
+        <li>
+            <strong>2019 – 2023</strong><br>
+            B.Sc. in Computer Science and Technology,  
+            Nanjing University of Aeronautics and Astronautics.<br>
+            Supervisor: Prof. <a href="https://csyuzhou.github.io/">Yu Zhou</a>
+        </li>
+        <li>
+            <strong>2023 – Present</strong><br>
+            Ph.D. Candidate, Fudan University.<br>
+            Supervisors: Prof. Weikang Gong, Prof. Jianfeng Feng
+        </li>
+    </ul>
+</section>
 
-    <!-- 添加访客统计 -->
-    <section id="contact">
+<section id="research">
+    <h2>Research Interests</h2>
+    <ul>
+        <li>Brain Imaging & Neuroimaging Analysis</li>
+        <li>Deep Learning for Medical Imaging</li>
+        <li>Intelligent Software Engineering (Code Generation)</li>
+    </ul>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>
+        Email: <a href="mailto:yangchang23@m.fudan.edu.cn">
+        yangchang23@m.fudan.edu.cn</a>
+    </p>
+    <p>
+        Address: Fudan University, Yangpu District, Shanghai, China
+    </p>
+</section>
+
+<section id="visitor">
     <h2>Visitor Statistics</h2>
     <div id="visitor-stats">
-    <a href="https://info.flagcounter.com/GRuK">
-    <img src="https://s01.flagcounter.com/count2/GRuK/bg_C9DBFF/txt_000000/border_11210D/columns_4/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0">
-    </a>
+        <a href="https://info.flagcounter.com/GRuK">
+            <img src="https://s01.flagcounter.com/count2/GRuK/bg_C9DBFF/txt_000000/border_11210D/columns_4/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
+                 alt="Visitor statistics">
+        </a>
     </div>
-    </section>
+</section>
+
+</main>
+
+<script src="encryption.js"></script>
+
 </body>
 </html>
