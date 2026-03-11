@@ -1,115 +1,252 @@
-/* ===== 全局 ===== */
+/* ===== Reset ===== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* ===== Base ===== */
 body {
-    font-family: "Times New Roman", Times, serif;
+    font-family: Georgia, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
-    background: #ffffff;
-    color: #222;
-    line-height: 1.7;
+    background: #fff;
+    color: #1a1a1a;
+    font-size: 16px;
+    line-height: 1.75;
 }
 
 /* ===== Header ===== */
 header {
     border-bottom: 1px solid #ddd;
-    padding: 40px 0 20px;
     background: #fff;
+    padding: 22px 0;
 }
 
 .header-content {
-    max-width: 900px;
+    max-width: 860px;
     margin: 0 auto;
-    text-align: center;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header h1 {
+.header-name h1 {
     margin: 0;
-    font-size: 2.2em;
-    font-weight: normal;
+    font-size: 1.55em;
+    font-weight: bold;
     color: #111;
+    letter-spacing: 0.01em;
+}
+
+.header-sub {
+    font-size: 0.82em;
+    color: #777;
+    font-style: italic;
 }
 
 /* ===== Navigation ===== */
-nav {
-    margin-top: 15px;
-}
-
 nav a {
-    margin: 0 10px;
-    font-size: 1em;
-    color: #004080;
+    margin-left: 22px;
+    font-size: 0.88em;
+    color: #1772d0;
     text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: 0.02em;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* ===== Section ===== */
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+/* ===== Main ===== */
+main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
-/* ===== Titles ===== */
-h2 {
-    font-size: 1.4em;
-    font-weight: normal;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color: #111;
-}
-
-/* ===== Main layout ===== */
-.main-section {
+/* ===== Bio Section ===== */
+.bio-section {
     display: flex;
-    gap: 30px;
+    gap: 44px;
+    padding: 40px 0 36px;
+    border-bottom: 1px solid #eee;
 }
 
-#about {
-    flex: 2;
+.bio-photo {
+    flex: 0 0 170px;
 }
 
-#photo {
+.bio-photo img {
+    width: 100%;
+    display: block;
+    border-radius: 3px;
+}
+
+.bio-text {
     flex: 1;
+    padding-top: 4px;
 }
 
-#photo img {
-    max-width: 100%;
-    border-radius: 4px;
+.bio-name {
+    margin: 0 0 6px 0;
+    font-size: 1.55em;
+    font-weight: bold;
+    color: #111;
+    border: none;
+    padding: 0;
+    letter-spacing: 0.01em;
 }
 
-/* ===== Lists ===== */
-ul {
-    padding-left: 20px;
+.bio-chinese {
+    font-size: 0.68em;
+    color: #666;
+    font-weight: normal;
+    font-style: normal;
 }
 
-li {
-    margin-bottom: 8px;
+.bio-position {
+    margin: 0 0 16px;
+    color: #444;
+    font-style: italic;
+}
+
+.bio-text p {
+    margin: 6px 0;
+}
+
+.bio-links {
+    margin-top: 18px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.bio-links a {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.82em;
+    color: #1772d0;
+    border: 1px solid #1772d0;
+    padding: 3px 12px;
+    border-radius: 2px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: background 0.15s, color 0.15s;
+}
+
+.bio-links a:hover {
+    background: #1772d0;
+    color: #fff;
+}
+
+/* ===== Section wrapper ===== */
+section {
+    padding: 32px 0;
+    border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+    border-bottom: none;
+}
+
+/* ===== Section headings ===== */
+h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.78em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #333;
+    margin: 0 0 22px 0;
+    padding-bottom: 7px;
+    border-bottom: 2px solid #1772d0;
+    display: inline-block;
+}
+
+/* ===== Education ===== */
+.edu-item {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 22px;
+}
+
+.edu-item:last-child {
+    margin-bottom: 0;
+}
+
+.edu-year {
+    flex: 0 0 110px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 0.84em;
+    color: #777;
+    padding-top: 2px;
+    white-space: nowrap;
+}
+
+.edu-detail {
+    flex: 1;
+    line-height: 1.65;
 }
 
 /* ===== Links ===== */
 a {
-    color: #004080;
+    color: #1772d0;
+    text-decoration: none;
 }
 
 a:hover {
-    color: #002b5c;
+    text-decoration: underline;
 }
 
 /* ===== Contact ===== */
 #contact p {
-    margin: 6px 0;
+    margin: 5px 0;
+}
+
+/* ===== Visitor Stats ===== */
+#visitor-stats {
+    opacity: 0.85;
+}
+
+/* ===== Footer ===== */
+footer {
+    border-top: 1px solid #eee;
+    text-align: center;
+    padding: 20px 24px;
+    color: #aaa;
+    font-size: 0.78em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
 }
 
 /* ===== Mobile ===== */
-@media (max-width: 768px) {
-    .main-section {
+@media (max-width: 640px) {
+    .header-content {
         flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
 
-    header h1 {
-        font-size: 1.8em;
+    nav a {
+        margin-left: 0;
+        margin-right: 16px;
+    }
+
+    .bio-section {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .bio-photo {
+        flex: none;
+        width: 140px;
+    }
+
+    .edu-item {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .edu-year {
+        flex: none;
     }
 }

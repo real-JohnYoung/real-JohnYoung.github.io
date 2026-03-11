@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>John Young | Academic Homepage</title>
-
+    <title>John Young | Fudan University</title>
     <link rel="stylesheet" href="styles/style_v1.css">
 </head>
 
@@ -12,72 +11,90 @@
 
 <header>
     <div class="header-content">
-        <h1>John Young's Homepage</h1>
+        <div class="header-name">
+            <h1>John Young</h1>
+            <span class="header-sub">Ph.D. Candidate &nbsp;&middot;&nbsp; Fudan University</span>
+        </div>
         <nav>
-            <a href="#about">About Me</a>
+            <a href="#about">About</a>
             <a href="subpages/publications.html">Publications</a>
             <a href="subpages/news.html">News</a>
-            <a href="#" onclick="showEncryptedContent('index'); return false;">Curriculum Vitae</a>
+            <a href="#" onclick="showEncryptedContent('index'); return false;">CV</a>
         </nav>
     </div>
 </header>
 
 <main>
 
-<section class="main-section">
-    <div id="photo">
-        <img src="images/profile.jpg" alt="Profile photo of John Young">
+<section class="bio-section" id="about">
+    <div class="bio-photo">
+        <img src="images/profile.jpg" alt="John Young">
     </div>
-
-    <div id="about">
-        <p><strong>Chinese name:</strong> Chang Yang (杨 畅)</p>
-        <p><strong>Ph.D. Candidate</strong>, Fudan University</p>
-        <p><strong>Research Interests:</strong> Brain Imaging, Deep Learning, Generative AI, AI for health</p>
-        <p><strong>Hobbies:</strong> Football, violin and food.</p>
+    <div class="bio-text">
+        <h2 class="bio-name">John Young <span class="bio-chinese">（杨 畅）</span></h2>
+        <p class="bio-position">Ph.D. Candidate, Fudan University</p>
+        <p>
+            <strong>Research Interests:</strong> Brain Imaging, Deep Learning, Generative AI, AI for Health
+        </p>
+        <p>
+            <strong>Hobbies:</strong> Football, violin, and food.
+        </p>
+        <div class="bio-links">
+            <a href="mailto:yangchang23@m.fudan.edu.cn">Email</a>
+            <!--
+            <a href="#">Google Scholar</a>
+            <a href="#">GitHub</a>
+            -->
+        </div>
     </div>
 </section>
 
-<section id="academic">
-    <h2>Academic Background</h2>
-    <ul>
-        <li>
-            <strong>2019 – 2023</strong><br>
-            B.Sc. in Computer Science and Technology,
-            Nanjing University of Aeronautics and Astronautics.<br>
+<section id="education">
+    <h2>Education</h2>
+
+    <div class="edu-item">
+        <div class="edu-year">2023 – Present</div>
+        <div class="edu-detail">
+            <strong>Ph.D. Candidate</strong>, Fudan University<br>
+            Advisors: Prof. <a href="https://weikanggong.github.io/">Weikang Gong</a>
+            and Prof. <a href="https://www.dcs.warwick.ac.uk/~feng/">Jianfeng Feng</a>
+        </div>
+    </div>
+
+    <div class="edu-item">
+        <div class="edu-year">2019 – 2023</div>
+        <div class="edu-detail">
+            <strong>B.Sc. in Computer Science and Technology</strong>,
+            Nanjing University of Aeronautics and Astronautics<br>
             Research: Intelligent Software Engineering (Code Generation)<br>
-            Supervisor: Prof. <a href="https://csyuzhou.github.io/">Yu Zhou</a>
-        </li>
-        <li>
-            <strong>2023 – Present</strong><br>
-            Ph.D. Candidate, Fudan University.<br>
-            Supervisors: Prof. <a href="https://weikanggong.github.io/">Weikang Gong</a>, <a href="https://www.dcs.warwick.ac.uk/~feng/">Jianfeng Feng</li>
-        </a> 
-    </ul>
+            Advisor: Prof. <a href="https://csyuzhou.github.io/">Yu Zhou</a>
+        </div>
+    </div>
 </section>
-
 
 <section id="contact">
     <h2>Contact</h2>
-    <p>
-        Email: <a href="mailto:yangchang23@m.fudan.edu.cn">
-        yangchang23@m.fudan.edu.cn</a>
+    <p><strong>Email:</strong>
+        <a href="mailto:yangchang23@m.fudan.edu.cn">yangchang23@m.fudan.edu.cn</a>
     </p>
-    <p>
-        Address: Fudan University, Yangpu District, Shanghai, China
-    </p>
+    <p><strong>Address:</strong> Fudan University, Yangpu District, Shanghai, China</p>
 </section>
 
 <section id="visitor">
-    <h2>Visitor Statistics</h2>
+    <h2>Visitors</h2>
     <div id="visitor-stats">
         <a href="https://info.flagcounter.com/GRuK">
             <img src="https://s01.flagcounter.com/count2/GRuK/bg_C9DBFF/txt_000000/border_11210D/columns_4/maxflags_12/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
-                 alt="Visitor statistics">
+                 alt="Flag Counter">
         </a>
     </div>
 </section>
 
 </main>
+
+<footer>
+    <p>&copy; 2026 John Young &nbsp;&middot;&nbsp; Shanghai, China</p>
+</footer>
 
 <script src="encryption.js"></script>
 
