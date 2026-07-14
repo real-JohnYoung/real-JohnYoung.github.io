@@ -115,30 +115,6 @@ main {
     margin: 6px 0;
 }
 
-.bio-links {
-    margin-top: 18px;
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-}
-
-.bio-links a {
-    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-    font-size: 0.82em;
-    color: #1772d0;
-    border: 1px solid #1772d0;
-    padding: 3px 12px;
-    border-radius: 2px;
-    text-decoration: none;
-    letter-spacing: 0.03em;
-    transition: background 0.15s, color 0.15s;
-}
-
-.bio-links a:hover {
-    background: #1772d0;
-    color: #fff;
-}
-
 /* ===== Section wrapper ===== */
 section {
     padding: 32px 0;
@@ -188,7 +164,7 @@ h2 {
     line-height: 1.65;
 }
 
-/* ===== Links ===== */
+/* ===== Anchors ===== */
 a {
     color: #1772d0;
     text-decoration: none;

@@ -17,9 +17,7 @@
         </div>
         <nav>
             <a href="#about">About</a>
-            <a href="subpages/publications.html">Publications</a>
-            <a href="subpages/news.html">News</a>
-            <a href="#" onclick="showEncryptedContent('index'); return false;">CV</a>
+            <a href="#" onclick="showEncryptedContent(); return false;">CV</a>
         </nav>
     </div>
 </header>
@@ -31,21 +29,20 @@
         <img src="images/profile.jpg" alt="John Young">
     </div>
     <div class="bio-text">
-        <h2 class="bio-name">John Young <span class="bio-chinese">（杨 畅）</span></h2>
+        <h2 class="bio-name">John Young <span class="bio-chinese">(Chang Yang)</span></h2>
         <p class="bio-position">Ph.D. Candidate, Fudan University</p>
         <p>
-            <strong>Research Interests:</strong> Brain Imaging, Deep Learning, Generative AI, AI for Health
+            <strong>Research Interests:</strong> Foundation Models, Medical AI, World Models
         </p>
         <p>
             <strong>Hobbies:</strong> Football, violin, and food.
         </p>
-        <div class="bio-links">
-            <a href="mailto:yangchang23@m.fudan.edu.cn">Email</a>
-            <!--
-            <a href="#">Google Scholar</a>
-            <a href="#">GitHub</a>
-            -->
-        </div>
+        <p>
+            <strong>Email:</strong> yangchang23 [at] m.fudan.edu.cn
+        </p>
+        <p>
+            <strong>Address:</strong> Fudan University, Yangpu District, Shanghai, China
+        </p>
     </div>
 </section>
 
@@ -56,8 +53,8 @@
         <div class="edu-year">2023 – Present</div>
         <div class="edu-detail">
             <strong>Ph.D. Candidate</strong>, Fudan University<br>
-            Advisors: Prof. <a href="https://weikanggong.github.io/">Weikang Gong</a>
-            and Prof. <a href="https://www.dcs.warwick.ac.uk/~feng/">Jianfeng Feng</a>
+            Supervisor: Prof. <a href="https://www.dcs.warwick.ac.uk/~feng/">Jianfeng Feng</a>
+            and Prof. <a href="https://weikanggong.github.io/">Weikang Gong</a> (co-supervisor)
         </div>
     </div>
 
@@ -66,18 +63,27 @@
         <div class="edu-detail">
             <strong>B.Sc. in Computer Science and Technology</strong>,
             Nanjing University of Aeronautics and Astronautics<br>
-            Research: Intelligent Software Engineering (Code Generation)<br>
-            Advisor: Prof. <a href="https://csyuzhou.github.io/">Yu Zhou</a>
+            Research: LLM for Code Generation<br>
+            Supervisor: Prof. <a href="https://csyuzhou.github.io/">Yu Zhou</a>
         </div>
     </div>
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <p><strong>Email:</strong>
-        <a href="mailto:yangchang23@m.fudan.edu.cn">yangchang23@m.fudan.edu.cn</a>
-    </p>
-    <p><strong>Address:</strong> Fudan University, Yangpu District, Shanghai, China</p>
+<section id="publications">
+    <h2>Publications</h2>
+
+    <h3>Papers</h3>
+    <ol>
+        <li>Chang Yang (independent first author), et al. "GenBrain: A Generative Foundation Model of Multimodal Brain Imaging." medRxiv (2025): 2025-12. <strong>Nature Biomedical Engineering</strong> (major revision).</li>
+        <li>Hanlin Jiang, Chang Yang, et al. "OmicFormer: a statistical priors-informed transformer for accurate and generalizable omics prediction of diseases and complex traits." <strong>Science Advances</strong>, under review.</li>
+        <li>"Towards Brain MRI Foundation Models for the Clinic: Findings from the FOMO25 Challenge." <strong>Medical Image Analysis</strong>, under review. MICCAI Competition Paper.</li>
+    </ol>
+
+    <h3>Patents</h3>
+    <ol>
+        <li>A Rating Method for Ankylosing Spondylitis Based on Visual State Space Model [2024, CN118570202A]</li>
+        <li>An Ordinal Ankylosing Spondylitis Rating Method Based on Supervised Contrastive Learning [2024, CN118172614A]</li>
+    </ol>
 </section>
 
 <section id="visitor">
